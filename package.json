@@ -1,0 +1,16 @@
+{
+  "name": "reactB",
+  "private": true,
+  "scripts": {
+    "start": "webpack server",
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "i1": "npm i -D webpack webpack-cli webpack-dev-server",
+    "i2": "npm i "
+  },
+  "devDependencies": {
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
+  }
+}

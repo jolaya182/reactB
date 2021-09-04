@@ -1,5 +1,6 @@
 const path = require("path");
 const dist = path.resolve(__dirname, "./dist");
+// const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development",
@@ -24,7 +25,10 @@ module.exports = {
       },
     ],
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [
+    new MiniCssExtractPlugin(),
+    // new ReactRefreshWebpackPlugin()
+],
   devtool: "source-map",
   devServer: {
     static: dist,

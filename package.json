@@ -15,7 +15,8 @@
     "i8": "npm i -D html-webpack-plugin",
     "i9": "npm i -D html-webpack-plugin@next",
     "i10": "npm i -D clean-webpack-plugin",
-    "i11": "npm i -D "
+    "111": "npm i -S core-js regenerator-runtime immer",
+    "i12": "npm i -D  @pmmmwh/react-refresh-webpack-plugin react-refresh"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",

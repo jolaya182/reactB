@@ -9,7 +9,7 @@ const App = ()=>{
         <section className="hero"> </section>
             <main>
                 <section>
-                <h1>HI! react</h1>
+                <h1>HI! react sdf </h1>
                 </section>
             </main>
             <Recipes></Recipes>

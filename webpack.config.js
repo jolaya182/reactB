@@ -9,14 +9,14 @@ module.exports = {
       {
         test: /\.(s[ac]|c)ss$/i,
         use: [
-          MiniCssExtractPlugin.loader,
+             MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
           "sass-loader",
         ],
       },
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -31,5 +31,8 @@ module.exports = {
     historyApiFallback: true,
     hot: true,
   },
-  target: "browserslist"
+  target: "browserslist",
+  resolve: {
+      extensions: [".js", ".jsx"],
+  }
 };

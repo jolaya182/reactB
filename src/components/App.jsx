@@ -5,7 +5,7 @@ import '../styles/index.scss';
 
 const App = ()=>{
     return(
-        <>
+        <div>
         <section className="hero"> </section>
             <main>
                 <section>
@@ -13,7 +13,7 @@ const App = ()=>{
                 </section>
             </main>
             <Recipes></Recipes>
-        </>
+        </div>
     )
 }
 

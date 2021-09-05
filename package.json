@@ -2,9 +2,10 @@
   "name": "reactB",
   "private": true,
   "scripts": {
-    "start": "webpack server",
+    "start": "cross-env webpack server",
     "watch": "webpack --watch",
     "build": "webpack",
+    "lint": "eslint .",
     "i1": "npm i -D webpack webpack-cli webpack-dev-server",
     "i2": "npm i -D babel-loader @babel/core @babel/preset-env",
     "i3": "npm i -D css-loader mini-css-extract-plugin",
@@ -15,15 +16,32 @@
     "i8": "npm i -D html-webpack-plugin",
     "i9": "npm i -D html-webpack-plugin@next",
     "i10": "npm i -D clean-webpack-plugin",
-    "111": "npm i -S core-js regenerator-runtime immer",
-    "i12": "npm i -D  @pmmmwh/react-refresh-webpack-plugin react-refresh"
+    "i11": "npm i -D cross-env ",
+    "i12": "npm i -S core-js regenerator-runtime ",
+    "i13": "npm i -D @babel/eslint-parser @babel/preset-env  eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks ",
+    "i14": "npm i -D immer",
+    "i15": "npm i -D ",
+    "i16": "npm i -D ",
+    "i17": "npm i -D  @pmmmwh/react-refresh-webpack-plugin react-refresh"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
+    "@babel/eslint-parser": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
     "@babel/preset-react": "^7.14.5",
     "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.2.2",
     "postcss": "^8.3.6",
     "postcss-loader": "^6.1.1",
@@ -35,7 +53,9 @@
     "webpack-dev-server": "^4.1.0"
   },
   "dependencies": {
+    "core-js": "^3.17.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "regenerator-runtime": "^0.13.9"
   }
 }

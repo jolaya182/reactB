@@ -3,10 +3,13 @@ const path = require('path');
 const dist = path.resolve(__dirname, './dist');
 // const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   output: {
+    path: dist,
     assetModuleFilename: 'images/[hash][ext][query]'
   },
   module: {
@@ -37,7 +40,11 @@ module.exports = {
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    }),
+    new CleanWebpackPlugin()
     // new ReactRefreshWebpackPlugin()
   ],
   devtool: 'source-map',
@@ -46,7 +53,7 @@ module.exports = {
     historyApiFallback: true,
     hot: true
   },
-  target: 'browserslist',
+  target: 'web',
   resolve: {
     extensions: ['.js', '.jsx']
   }

@@ -12,6 +12,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const htmlTemplatePath = './src/frontend/index.html';
 const entryPoint = './src/frontend/index.jsx';
+const favicon = './src/frontend/images/jLogo.ico';
 module.exports = {
   entry: entryPoint,
   output: {
@@ -23,7 +24,8 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
-      template: htmlTemplatePath
+      template: htmlTemplatePath,
+      favicon
     })
   ],
   module: {

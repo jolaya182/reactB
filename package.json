@@ -19,6 +19,7 @@
     "i12": "npm i -S core-js regenerator-runtime ",
     "i13": "npm i -D @babel/eslint-parser @babel/preset-env  eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks ",
     "i14": "npm i -D immer",
+    "iAll": "npm run i1 && npm run i2 && npm run i3 && npm run i4 && npm run i5 &&  npm run i6 && npm run i7 && npm run i8 && npm run i10 && npm run i11 && npm run i12 && npm run i13 && npm run i14",
     "i17": "npm i -D  @pmmmwh/react-refresh-webpack-plugin react-refresh"
   },
   "devDependencies": {
